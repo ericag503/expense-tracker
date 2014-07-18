@@ -1,0 +1,14 @@
+#show-list {
+  display: none;
+}
+
+.on-off, .list-of-tasks {
+  display: none;
+}
+.list {
+  cursor: pointer;
+  color: #0088cc;
+}
+.list:hover {
+  text-decoration: underline;
+}
