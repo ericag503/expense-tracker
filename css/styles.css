@@ -1,14 +1,11 @@
-#show-list {
+.expense-hide {
   display: none;
 }
 
-.on-off, .list-of-tasks {
-  display: none;
-}
-.list {
+.clickable-category {
   cursor: pointer;
   color: #0088cc;
 }
-.list:hover {
+.clickable-category:hover {
   text-decoration: underline;
 }

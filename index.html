@@ -13,36 +13,62 @@
       <div class="container">
         <h1>Expense Organizer</h1>
         <div class="row">
-          <div class="col-md-6">
-            <h2>Add Purchase:</h2>
-            <form id="description">
+          <div class="col-md-4">
+            <h2>Categories</h2>
+            <div id="categories">
+              <!-- Empty space for category names -->
+            </div>
+
+            <form id="categories">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="New Category" id="new-category">
+              </div>
+
+              <button type="submit" class="btn">Add</button>
+            </form>
+          </div>
+
+          <div class="col-md-4 expense-hide">
+            <h2>Add purchase to<span id="purchase-category"></span></h2>
+            <form id="purchase">
               <div class="form-group">
                 <input type="text" class="form-control" placeholder="Description" id="description">
               </div>
-            </form>
 
-            <form id="amount">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Amount" id="amount">
+                <input type="number" class="form-control" placeholder="Amount" id="amount">
+              </div>
+
+              <div class="form-group">
+                <input type="number" class="form-control" placeholder="Quantity" id="quantity">
               </div>
 
             <button type="submit" class="btn">Track</button>
             </form>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-4 expense-hide">
             <h2>Purchases</h2>
-            <table class="table table-hover">
+            <table class="table table-hover purchases">
               <thead>
                 <tr>
-                  <td>Description</td>
-                  <td>Amount</td>
+                  <th>Description</th>
+                  <th>Amount</th>
+                  <th>Quantity</th>
+                  <th>Total</th>
                 </tr>
               </thead>
-              <tr id="expense-input">
-                <td>test</td>
-                <td>test2</td>
-              </tr>
+                <tbody>
+                  <tr>
+                  </tr>
+                </tbody>
+            <div>
+              <table class="table table-hover grand-total">
+                <tbody>
+                  <tr>
+                  </tr>
+                </tbody>
+            </div>
           </div>
       </div>
     </body>
